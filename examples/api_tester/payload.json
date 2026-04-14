@@ -1,0 +1,9 @@
+{
+  "title": "Example request",
+  "priority": "high",
+  "tags": ["demo", "pytoolkit"],
+  "meta": {
+    "source": "api_tester",
+    "version": "1.0.0"
+  }
+}

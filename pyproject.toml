@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytoolkit"
+version = "1.0.0"
+description = "A collection of practical Python CLI tools for everyday developer tasks."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Alperen Akın" }
+]
+requires-python = ">=3.8"
+keywords = ["cli", "tools", "utilities", "scraper", "api", "converter"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+]
+
+[project.scripts]
+file-renamer = "tools.file_renamer:main"
+json-csv = "tools.json_csv_converter:main"
+web-scraper = "tools.web_scraper:main"
+api-tester = "tools.api_tester:main"
+text-cleaner = "tools.text_cleaner:main"
+
+[tool.setuptools.packages.find]
+include = ["tools*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"

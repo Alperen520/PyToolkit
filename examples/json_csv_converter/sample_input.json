@@ -1,0 +1,6 @@
+[
+  {"id": 1, "name": "Ada Lovelace", "role": "Mathematician", "year": 1815},
+  {"id": 2, "name": "Grace Hopper", "role": "Computer Scientist", "year": 1906},
+  {"id": 3, "name": "Alan Turing", "role": "Mathematician", "year": 1912},
+  {"id": 4, "name": "Linus Torvalds", "role": "Software Engineer", "year": 1969}
+]

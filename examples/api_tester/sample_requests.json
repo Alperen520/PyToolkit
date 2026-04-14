@@ -1,0 +1,24 @@
+{
+  "examples": [
+    {
+      "name": "GitHub user profile",
+      "command": "api-tester -u https://api.github.com/users/octocat"
+    },
+    {
+      "name": "POST JSON body",
+      "command": "api-tester -u https://httpbin.org/post -X POST --json '{\"name\":\"Alperen\"}'"
+    },
+    {
+      "name": "Custom headers and query params",
+      "command": "api-tester -u https://httpbin.org/get -H 'X-Api-Key: secret' -q limit=10 -q page=2"
+    },
+    {
+      "name": "PUT body from file, save response",
+      "command": "api-tester -u https://httpbin.org/put -X PUT --data-file payload.json --save response.json"
+    },
+    {
+      "name": "DELETE with bearer token",
+      "command": "api-tester -u https://httpbin.org/delete -X DELETE -H 'Authorization: Bearer xyz'"
+    }
+  ]
+}

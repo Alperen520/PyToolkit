@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "user": {"name": "Ada", "city": "London"},
+    "stats": {"posts": 42, "followers": 1000}
+  },
+  {
+    "id": 2,
+    "user": {"name": "Linus", "city": "Helsinki"},
+    "stats": {"posts": 87, "followers": 50000}
+  }
+]
